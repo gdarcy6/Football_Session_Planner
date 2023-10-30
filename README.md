@@ -10,3 +10,5 @@ will give you how many players are available per position.
 The second table called "League Table" contains a league table. This table is scrapped using scraperapi.
 Below the table is some links I find useful. If you click on a link, a new page will be opened in your browser and will display the landing page of that website/podcast.
 
+![Screenshot (166)](https://github.com/gdarcy6/Football_Session_Planner/assets/72211255/688df014-d175-4c67-9d6e-6d598c9947d3)
+
