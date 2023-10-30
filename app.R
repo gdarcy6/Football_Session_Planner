@@ -12,7 +12,24 @@ wnl_table <- url %>%
   html_nodes(xpath = '//*[@id="ID_OF_TABLE_ELEMENT"]') %>% # you can find the table id by right clicking on the table and going to inspect element.
   html_table()
 
+# Sample data of players with positions
+players_data <- data.frame(
+  Name = c(
+    "Player 1", "Player 2", 
+    "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10",
+    "Player 11", "Player 12", "Player 13", "Player 14", "Player 15", "Player 16", "Player 17", "Player 18",
+    "Player 19", "Player 20", "Player 21", "Player 22", "Player 23", "Player 24"
+  ),
+  Position = c(
+    "Goalkeeper", "Goalkeeper", 
+    "Defender", "Defender", "Defender", "Defender", "Defender", "Defender", "Defender", "Defender",
+    "Midfielder", "Midfielder", "Midfielder", "Midfielder", "Midfielder", "Midfielder", "Midfielder", "Midfielder",
+    "Attacker", "Attacker", "Attacker", "Attacker", "Attacker", "Attacker"
+  )
+)
 
+# Define the custom order of positions
+position_order <- c("Goalkeeper", "Defender", "Midfielder", "Attacker")
 
 
 ui = navbarPage("Session Planner", theme = shinytheme("slate"),
