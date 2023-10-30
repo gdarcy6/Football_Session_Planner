@@ -1,7 +1,6 @@
 library(shiny)
 library(shinythemes)
 library(rvest)  # For web scraping
-library(shinyjs) # Load shinyjs package
 library(DT)  # Display tables
 
 
